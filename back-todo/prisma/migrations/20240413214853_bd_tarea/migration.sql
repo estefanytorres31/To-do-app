@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `task` MODIFY `fecha_creacion` TIMESTAMP(0) NOT NULL DEFAULT CURRENT_TIMESTAMP(0);

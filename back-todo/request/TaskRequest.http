@@ -1,0 +1,23 @@
+@api=http://localhost:3001/task
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "titulo":"Examen",
+    "descripcion":"Estudiar para examen final",
+    "fecha_limite":"2024-04-25T00:00:00Z"
+}
+###
+GET {{api}}
+###
+DELETE {{api}}/6
+###
+PUT {{api}}/7
+Content-Type: application/json
+
+{
+    "titulo": "Título de tarea",
+    "descripcion": "Descripción de la tarea",
+    "fecha_limite": "14-04-2024 12:00"
+}
