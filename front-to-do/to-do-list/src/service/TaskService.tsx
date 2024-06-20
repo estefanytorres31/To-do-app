@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Task } from "../models/task";
 
-const apiUrl = "https://to-do-app-production-74fd.up.railway.app/task";
+const apiUrl = "http://localhost:3001/task";
 
 export const getTasks = async () => {
   try {
