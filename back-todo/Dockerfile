@@ -19,4 +19,4 @@ RUN npx prisma generate
 EXPOSE 3000
 
 # Comando para iniciar la aplicación
-CMD ["node", "src/index.js"]
+CMD ["npm", "run", "dev"]
