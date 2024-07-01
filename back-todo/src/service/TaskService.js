@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { getUTCTime } from "../utils/time";
+import { getUTCTime } from "../utils/time.js";
 
 const prisma=new PrismaClient();
 

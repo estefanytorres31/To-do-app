@@ -4,7 +4,7 @@ FROM node:20
 WORKDIR /usr/src/app
 
 # Copiar package.json y package-lock.json
-COPY package*.json ./
+COPY package.json .
 
 # Instalar dependencias
 RUN npm install
@@ -20,3 +20,6 @@ EXPOSE 3000
 
 # Comando para iniciar la aplicación
 CMD ["npm", "run", "dev"]
+
+COPY ./docker-entrypoint.sh /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]
